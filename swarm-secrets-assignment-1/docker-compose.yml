@@ -29,7 +29,5 @@ volumes:
   drupal-themes:
 
 secrets:
-  psql_user:
-    file: ./psql_user.txt
   psql_pass:
-    file: ./psql_pass.txt
+    external: true
