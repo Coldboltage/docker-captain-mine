@@ -19,7 +19,7 @@ services:
     environment:
       - POSTGRES_PASSWORD_FILE=/run/secrets/psql_pass
     secrets:
-      - psql_pass
+      - psql-password
     volumes:
       - drupal-data:/var/lib/postgresql/data
 
