@@ -17,7 +17,7 @@ services:
   postgres:
     image: postgres:14.3
     environment:
-      - POSTGRES_PASSWORD_FILE=/run/secrets/psql_pass
+      - POSTGRES_PASSWORD_FILE=/run/secrets/psql-password
     secrets:
       - psql-password
     volumes:
