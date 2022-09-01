@@ -31,5 +31,5 @@ volumes:
   drupal-themes:
 
 secrets:
-  psql_pass:
+  psql-password:
     external: true
